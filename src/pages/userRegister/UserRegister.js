@@ -3,6 +3,7 @@ import { Button, Container, Form, Row, Col } from 'react-bootstrap'
 import {useDispatch} from "react-redux";
 import {addUserAction} from "../../redux/actions";
 import Menu from "../../components/Menu";
+import {messiFunction} from "../../store/PostSlice";
 function UsersRegister() {
 
     const dispatch = useDispatch()
@@ -22,7 +23,7 @@ function UsersRegister() {
         const {name,username,email}=user
         const emailName = /^([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)$/i
         if (emailName.test(email)&& name && username){
-            dispatch(addUserAction(user))
+            dispatch(messiFunction(user))
         }else {
             alert('error')
         }
