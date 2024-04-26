@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.card {
+  width: 220px;
+  height: 250px;
+}
+.cardImg{
+  width: 90%;
+  height: 27%;
+  object-fit: cover;
+}
+.cardTitle{
+  font-size:25px ;
+}
+.cardDescription {
+  font-size: 20px;
+}
+.bigCard {
+  display: flex;
+  flex-wrap: wrap;
+}
